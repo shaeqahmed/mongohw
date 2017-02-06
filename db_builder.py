@@ -11,6 +11,7 @@ def add():
     peeps = csv.DictReader(a)
     courses = csv.DictReader(b)
     for info in peeps:
+        #rint info
         id  = info["id"]
         dict = {"id": id,
                 "age": info["age"],
@@ -18,8 +19,15 @@ def add():
                 "courses": []
         }
         for i in courses:
+            #rint i["id"]
+            #rint id
             if i["id"] == id:
                 dict["courses"].append([ i["code"], i["mark"] ] )
+        j = open("courses.csv")
+        courses = csv.DictReader(j)
         dataBase.students.insert_one(dict)
-
+    c = dataBase.students.find()
+    print c.count()
+    for x in c:
+        print x
 add()
