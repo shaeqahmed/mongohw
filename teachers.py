@@ -27,8 +27,8 @@ def main():
         col.insert_one(dict)
 
 main()
-server = MongoClient("149.89.150.100")
-col = server.Patriots_AhmedS_OstlundW.teachers
-a = col.find()
-for i in a:
-    print i
+#server = MongoClient("149.89.150.100")
+#col = server.Patriots_AhmedS_OstlundW.teachers
+#a = col.find()
+#for i in a:
+    #print i

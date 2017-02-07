@@ -27,7 +27,7 @@ def add():
         courses = csv.DictReader(j)
         dataBase.students.insert_one(dict)
     c = dataBase.students.find()
-    print c.count()
-    for x in c:
-        print x
+    #print c.count()
+    #for x in c:
+        #print x
 add()
