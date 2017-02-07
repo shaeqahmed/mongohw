@@ -5,7 +5,7 @@ def compute(x):
     ans = 0.0
     for a in x:
         i += 1.0
-        ans += a[1]
+        ans += int(a[1])
     return ans/i
 
     
@@ -17,11 +17,13 @@ def computeAverage():
     ids = []
     names = []
     for a in c:
-        averages.append([compute(a["courses"])])
-        ids.append([a["id"])
+        averages.append( compute(a["courses"]) )
+        ids.append([a["id"]])
         names.append([a["name"]])
     for i in range(len(averages)):
-        print "Name: "+names[i]+" ID: "+ids[i]+" Average: "+averages[i]
+        print "Name: " + str(names[i][0])
+        print  "ID: " + str(ids[i][0])
+        print  "Average: "+str(averages[i])
+        print "\n"
 
-
-    
+computeAverage()
