@@ -10,7 +10,7 @@ def compute(x):
 
     
 def computeAverage():
-    server = MongoClient("149.89.150.100")
+    server = MongoClient("127.0.0.1")
     col = server.Patriots_AhmedS_OstlundW.students
     c = col.find()
     averages = []
