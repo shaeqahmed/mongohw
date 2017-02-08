@@ -12,7 +12,7 @@ def getIds(students, course):
 def main():
     a = open("teachers.csv")
     read = csv.DictReader(a)
-    server = MongoClient("149.89.150.100")
+    server = MongoClient("127.0.0.1")
     db = server.Patriots_AhmedS_OstlundW
     col = db.teachers
     students = db.students
