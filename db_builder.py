@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import csv
 
 def add():
-    server = MongoClient("149.89.150.100") #homer ip address, we need to ssh and clone to see if it works or substitute with our own ip address
+    server = MongoClient("127.0.0.1") #homer ip address, we need to ssh and clone to see if it works or substitute with our own ip address
 
     dataBase = server.Patriots_AhmedS_OstlundW
     
